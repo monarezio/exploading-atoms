@@ -130,7 +130,11 @@ void newComputerGameF(GtkWidget *widget, gpointer data) {
 
 void initImages() {
 
-    //TODO: cleanup the old images...
+    if(images != nullptr) {
+        for (int i = 0; i < exploadingAtoms->getRows(); i++) {
+            delete [] images[i];
+        }
+    }
 
     images = new GtkWidget**[exploadingAtoms->getRows()];
     for (int i = 0; i < exploadingAtoms->getRows(); i++) {
