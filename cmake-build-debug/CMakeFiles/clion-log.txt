@@ -1,0 +1,8 @@
+"/Users/monarezio/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.5281.33/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/monarezio/CLionProjects/exploading-atoms
+-- Current conanbuildinfo.cmake directory: /Users/monarezio/CLionProjects/exploading-atoms/cmake-build-debug
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/monarezio/CLionProjects/exploading-atoms/cmake-build-debug

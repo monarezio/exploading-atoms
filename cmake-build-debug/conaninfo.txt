@@ -1,0 +1,51 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=9.1
+    os=Macos
+
+[requires]
+    boost_filesystem/1.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=9.1
+    os=Macos
+    os_build=Macos
+
+[full_requires]
+    boost_assert/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_config/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_core/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_detail/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_filesystem/1.65.1@bincrafters/stable:22082682f5d9a0d9fec8da859d7fd3a916488dce
+    boost_functional/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_io/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_iterator/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_package_tools/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_predef/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_range/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_smart_ptr/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_static_assert/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_system/1.65.1@bincrafters/stable:d3dc58c098e9baba41c44b451bf99cb30c171e0a
+    boost_type_traits/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    boost_winapi/1.65.1@bincrafters/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+
+[full_options]
+    boost_filesystem:shared=False
+    boost_system:shared=False
+
+[recipe_hash]
+
+
+[env]
+

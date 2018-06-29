@@ -1,0 +1,5 @@
+[requires]
+boost_filesystem/1.65.1@bincrafters/stable
+
+[generators]
+cmake

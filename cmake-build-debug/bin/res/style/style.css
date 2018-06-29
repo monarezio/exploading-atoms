@@ -1,0 +1,47 @@
+window.background {
+    background-color: white;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+button#grid {
+    background-image: none;
+    border: 0.5px solid #dfdfdf;
+    border-radius: 0;
+    background-color: white;
+}
+
+grid {
+    border: 0.5px solid black;
+    margin-top: 10px;
+}
+
+#menu {
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+}
+
+#menu button {
+    background-image: none;
+    border: 0.5px solid black;
+    border-radius: 0;
+    background-color: white;
+}
+
+progressbar {
+    margin-bottom: 14px;
+}
+
+progressbar trough {
+    background-color: blue;
+    padding: 1px;
+    border: none;
+    border-radius: 0;
+}
+
+progressbar progress {
+    background-color: red;
+    border-radius: 0;
+    border-color: red;
+}
