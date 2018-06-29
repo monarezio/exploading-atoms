@@ -2,7 +2,7 @@
 Exploading atoms implementation in c++.
 
 ## Libraries used
-- GTK3+
+- GTK+ 3
 - Boost filesystem (Conan package manager)
 
 ## Screenshots
