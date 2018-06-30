@@ -111,6 +111,12 @@ void onClick(GtkWidget *widget, Coordinate *data) {
 }
 
 void destroy(GtkWidget *widget, gpointer data) {
+
+    for (int i = 0; i < exploadingAtoms->getRows(); i++) {
+        delete [] images[i];
+    }
+    delete [] images;
+    
     gtk_main_quit ();
 }
 
@@ -132,17 +138,21 @@ void initImages() {
 
     if(images != nullptr) {
         for (int i = 0; i < exploadingAtoms->getRows(); i++) {
-            delete [] images[i];
+            for (int j = 0; j < exploadingAtoms->getColumns(); j++) {
+                images[i][j] = gtk_image_new_from_file(
+                        getImagePath(exploadingAtoms->getField(j, i)).c_str()
+                );
+            }
         }
-    }
-
-    images = new GtkWidget**[exploadingAtoms->getRows()];
-    for (int i = 0; i < exploadingAtoms->getRows(); i++) {
-        images[i] = new GtkWidget*[exploadingAtoms->getColumns()];
-        for (int j = 0; j < exploadingAtoms->getColumns(); j++) {
-            images[i][j] = gtk_image_new_from_file(
-                    getImagePath(exploadingAtoms->getField(j, i)).c_str()
-            );
+    } else {
+        images = new GtkWidget**[exploadingAtoms->getRows()];
+        for (int i = 0; i < exploadingAtoms->getRows(); i++) {
+            images[i] = new GtkWidget*[exploadingAtoms->getColumns()];
+            for (int j = 0; j < exploadingAtoms->getColumns(); j++) {
+                images[i][j] = gtk_image_new_from_file(
+                        getImagePath(exploadingAtoms->getField(j, i)).c_str()
+                );
+            }
         }
     }
 }
